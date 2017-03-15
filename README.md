@@ -2,7 +2,27 @@
 
 System for creating curriculum from git repos.
 
-### Example Commit:
+### The following need to be addressed and recorded:
+
+#### The "What"
+
+- What is the purpose of this software?
+    - what is the MVP?
+    - what are the long-term dreams?
+
+#### The "How"
+
+- What are some examples of meta data?
+    - title?
+    - steps to complete?
+    - prerequisites?
+    - links to docs / other tutorials?
+- Where/How should the meta data be included?
+    - commit messages?
+    - in comments throughout code?
+    - linked to each other with numeric order?
+
+### Potential Example Commit:
 
 ```
 Integrating Login
