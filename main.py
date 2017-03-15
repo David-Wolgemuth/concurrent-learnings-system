@@ -4,7 +4,7 @@ import os
 import sys
 
 from utils import file_extension, file_name, file_extensions
-from models import CodeFile
+from analyzer import CodeFile
 
 def get_code(path):
     name = file_name(path)
@@ -23,6 +23,7 @@ def traverse_dir(target):
     return code_files
 
 if len(sys.argv) == 2:
-    codes = traverse_dir(sys.argv[1])
-    for code in codes:
-        print code
+    files = traverse_dir(sys.argv[1])
+    for f in files:
+        for cb in f.blocks:
+            print cb
